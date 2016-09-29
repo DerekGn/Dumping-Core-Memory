@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="DumpingCoreMemory.Data.Linq.Generation.EntityDescriptor">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgJAAAAAQAAAAA=</HashCode>
+      <FileName>EntityDescriptor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DumpingCoreMemory.Data.Linq.Generation.EntityPropertyDescriptor">
+    <Position X="2.25" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAABAAAQAAAIAAAAAAQAAAAAAIAA=</HashCode>
+      <FileName>EntityPropertyDescriptor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DumpingCoreMemory.Data.Linq.Generation.LinqToSqlTypeGenerator" BaseTypeListCollapsed="true">
+    <Position X="4.5" Y="0.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAgAAAAAABAAAAAEAAAAAAAAAA=</HashCode>
+      <FileName>LinqToSqlTypeGenerator.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Interface Name="DumpingCoreMemory.Data.Linq.Generation.ITypeGenerator">
+    <Position X="7" Y="0.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAA=</HashCode>
+      <FileName>ITypeGenerator.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
