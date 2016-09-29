@@ -1,2 +1,2 @@
 # Dumping-Core-Memory
-A collection of code libaries for various purposes
+A collection of code libaries from http://corememorydump.blogspot.ie/
