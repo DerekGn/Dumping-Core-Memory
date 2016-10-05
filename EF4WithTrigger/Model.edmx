@@ -20,9 +20,9 @@
     </edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
-      <Schema Namespace="EF4Model" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+      <Schema Namespace="DumpingCoreMemory.EF4Model" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
         <EntityContainer Name="EF4Entities" annotation:LazyLoadingEnabled="true">
-          <EntitySet Name="TableWithVersions" EntityType="EF4Model.TableWithVersion" />
+          <EntitySet Name="TableWithVersions" EntityType="DumpingCoreMemory.EF4Model.TableWithVersion" />
         </EntityContainer>
         <EntityType Name="TableWithVersion">
           <Key>
@@ -38,7 +38,7 @@
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
         <EntityContainerMapping StorageEntityContainer="EF4ModelStoreContainer" CdmEntityContainer="EF4Entities">
-          <EntitySetMapping Name="TableWithVersions"><EntityTypeMapping TypeName="EF4Model.TableWithVersion"><MappingFragment StoreEntitySet="TableWithVersion">
+          <EntitySetMapping Name="TableWithVersions"><EntityTypeMapping TypeName="DumpingCoreMemory.EF4Model.TableWithVersion"><MappingFragment StoreEntitySet="TableWithVersion">
             <ScalarProperty Name="Identifier" ColumnName="Identifier" />
             <ScalarProperty Name="Type" ColumnName="Type" />
             <ScalarProperty Name="Version" ColumnName="Version" />
@@ -64,7 +64,7 @@
     <!-- Diagram content (shape and connector positions) -->
     <Diagrams>
       <Diagram Name="Model">
-        <EntityTypeShape EntityType="EF4Model.TableWithVersion" Width="1.75" PointX="1" PointY="0.75" Height="1.59568359375" IsExpanded="true" />
+        <EntityTypeShape EntityType="DumpingCoreMemory.EF4Model.TableWithVersion" Width="1.75" PointX="1" PointY="0.75" Height="1.59568359375" IsExpanded="true" />
       </Diagram>
     </Diagrams>
   </Designer>

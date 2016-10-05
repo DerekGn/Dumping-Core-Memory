@@ -24,7 +24,7 @@
 
 using System;
 
-namespace EF4WithTrigger
+namespace DumpingCoreMemory.EF4WithTrigger
 {
     class Program
     {

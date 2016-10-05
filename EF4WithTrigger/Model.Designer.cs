@@ -8,16 +8,16 @@
 //------------------------------------------------------------------------------
 
 using System;
+using System.ComponentModel;
+using System.Data.EntityClient;
 using System.Data.Objects;
 using System.Data.Objects.DataClasses;
-using System.Data.EntityClient;
-using System.ComponentModel;
-using System.Xml.Serialization;
+using System.Linq;
 using System.Runtime.Serialization;
+using System.Xml.Serialization;
 
 [assembly: EdmSchemaAttribute()]
-
-namespace EF4WithTrigger
+namespace DumpingCoreMemory.EF4WithTrigger
 {
     #region Contexts
     
@@ -82,6 +82,7 @@ namespace EF4WithTrigger
         private ObjectSet<TableWithVersion> _TableWithVersions;
 
         #endregion
+
         #region AddTo Methods
     
         /// <summary>
@@ -93,17 +94,17 @@ namespace EF4WithTrigger
         }
 
         #endregion
+
     }
-    
 
     #endregion
-    
+
     #region Entities
     
     /// <summary>
     /// No Metadata Documentation available.
     /// </summary>
-    [EdmEntityTypeAttribute(NamespaceName="EF4Model", Name="TableWithVersion")]
+    [EdmEntityTypeAttribute(NamespaceName="DumpingCoreMemory.EF4Model", Name="TableWithVersion")]
     [Serializable()]
     [DataContractAttribute(IsReference=true)]
     public partial class TableWithVersion : EntityObject
@@ -124,6 +125,7 @@ namespace EF4WithTrigger
         }
 
         #endregion
+
         #region Primitive Properties
     
         /// <summary>
@@ -202,9 +204,11 @@ namespace EF4WithTrigger
         partial void OnVersionChanged();
 
         #endregion
+
     
     }
 
     #endregion
+
     
 }

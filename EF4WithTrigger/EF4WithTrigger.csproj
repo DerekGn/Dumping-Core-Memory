@@ -8,8 +8,8 @@
     <ProjectGuid>{4B8C7336-F9B0-4CC2-A944-25B90E227FD2}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>EF4WithTrigger</RootNamespace>
-    <AssemblyName>EF4WithTrigger</AssemblyName>
+    <RootNamespace>DumpingCoreMemory.EF4WithTrigger</RootNamespace>
+    <AssemblyName>DumpingCoreMemory.EF4WithTrigger</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <TargetFrameworkProfile>Client</TargetFrameworkProfile>
     <FileAlignment>512</FileAlignment>
