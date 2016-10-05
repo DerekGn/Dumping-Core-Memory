@@ -8,8 +8,8 @@
     <ProjectGuid>{E46C56AA-9EEC-4802-BF23-F440F52C0CE0}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ReflectionProviderTest</RootNamespace>
-    <AssemblyName>ReflectionProviderTest</AssemblyName>
+    <RootNamespace>DumpingCoreMemory.ReflectionProviderTest</RootNamespace>
+    <AssemblyName>DumpingCoreMemory.ReflectionProviderTest</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <TargetFrameworkProfile>
     </TargetFrameworkProfile>

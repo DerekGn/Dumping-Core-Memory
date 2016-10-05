@@ -8,8 +8,8 @@
     <ProjectGuid>{80B09064-2551-4994-AEB1-8C199125F419}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>DerivedEntityTypes</RootNamespace>
-    <AssemblyName>DerivedEntityTypes</AssemblyName>
+    <RootNamespace>DumpingCoreMemory.DerivedEntityTypes</RootNamespace>
+    <AssemblyName>DumpingCoreMemory.DerivedEntityTypes</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>

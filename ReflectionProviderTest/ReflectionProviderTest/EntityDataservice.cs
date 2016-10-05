@@ -24,7 +24,7 @@
 
 using System.Data.Services;
 
-namespace ReflectionProviderTest
+namespace DumpingCoreMemory.ReflectionProviderTest
 {
 
     [System.ServiceModel.ServiceBehavior(IncludeExceptionDetailInFaults = true)]

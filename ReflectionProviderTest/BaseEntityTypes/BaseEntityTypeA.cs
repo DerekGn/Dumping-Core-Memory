@@ -25,7 +25,7 @@
 using System;
 using System.Data.Services.Common;
 
-namespace BaseEntityTypes
+namespace DumpingCoreMemory.BaseEntityTypes
 {
     [DataServiceEntity]
     [DataServiceKey("Id")]

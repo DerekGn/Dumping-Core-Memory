@@ -25,7 +25,7 @@
 using System;
 using System.Data.Services;
 
-namespace ReflectionProviderTest
+namespace DumpingCoreMemory.ReflectionProviderTest
 {
     class Program
     {

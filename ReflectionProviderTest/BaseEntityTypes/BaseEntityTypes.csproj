@@ -8,8 +8,8 @@
     <ProjectGuid>{30DD9618-C190-4FE3-BBFD-E920B868FC7A}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>BaseEntityTypes</RootNamespace>
-    <AssemblyName>BaseEntityTypes</AssemblyName>
+    <RootNamespace>DumpingCoreMemory.BaseEntityTypes</RootNamespace>
+    <AssemblyName>DumpingCoreMemory.BaseEntityTypes</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>

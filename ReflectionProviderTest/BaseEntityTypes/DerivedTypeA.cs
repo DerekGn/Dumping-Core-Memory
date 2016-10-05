@@ -24,7 +24,7 @@
 
 using System;
 
-namespace BaseEntityTypes
+namespace DumpingCoreMemory.BaseEntityTypes
 {
     public class DerivedTypeA : BaseEntityTypeA
     {

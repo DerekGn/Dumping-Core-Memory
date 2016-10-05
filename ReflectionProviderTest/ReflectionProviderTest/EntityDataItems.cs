@@ -24,11 +24,10 @@
 
 using System.Collections.Generic;
 using System.Linq;
+using DumpingCoreMemory.BaseEntityTypes;
+using DumpingCoreMemory.DerivedEntityTypes;
 
-using BaseEntityTypes;
-using DerivedEntityTypes;
-
-namespace ReflectionProviderTest
+namespace DumpingCoreMemory.ReflectionProviderTest
 {
     public class EntityDataItems
     {
