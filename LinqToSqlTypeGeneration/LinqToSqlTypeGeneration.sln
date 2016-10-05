@@ -1,6 +1,8 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestApplication", "TestApplication\TestApplication.csproj", "{E980BF20-583B-49C4-9670-76EE1A35787F}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DumpingCoreMemory.Data.Linq.Generation", "DumpingCoreMemory.Data.Linq.Generation\DumpingCoreMemory.Data.Linq.Generation.csproj", "{4346C4B6-5F53-4776-9369-351538700106}"
