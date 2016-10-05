@@ -1,6 +1,8 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DumpingCoreMemory.ResourcePooling", "DumpingCoreMemory.ResourcePooling\DumpingCoreMemory.ResourcePooling.csproj", "{D28D7E91-29F4-4A54-A4EB-7FC9E3D317B8}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestClient", "TestClient\TestClient.csproj", "{CBC43E8A-1EA6-4C3D-BB79-7B35CE63817E}"
