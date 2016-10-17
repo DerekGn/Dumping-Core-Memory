@@ -67,20 +67,64 @@ namespace DumpingCoreMemory.StatisticsUnitTests
 
 
         [Test]
-        public void TestQuantilesTestCaseB()
+        public void TestQuantilesTestCaseDataRandomDistribution()
         {
             var psquared = new PSquared(new List<double> {0d, 0.25d, 0.5d, 0.75d, 1d});
 
-            foreach (var d in TestCaseDataB.Data)
+            foreach (var d in TestCaseDataRandomDistribution.Data)
             {
                 psquared.AddSample(d);
             }
 
-            Assert.That(psquared.Result(0), Is.EqualTo(0.010376343130563188d));
-            Assert.That(psquared.Result(0.25d), Is.EqualTo(0.24177769775826496d));
-            Assert.That(psquared.Result(0.5d), Is.EqualTo(0.46242674676685891d));
-            Assert.That(psquared.Result(0.75d), Is.EqualTo(0.83040990858645203d));
-            Assert.That(psquared.Result(1d), Is.EqualTo(0.98174957638606375d));
+            Assert.That(psquared.Result(0), Is.EqualTo(0.0074893045760936749d));
+            Assert.That(psquared.Result(0.25d), Is.EqualTo(0.28504496967193316d));
+            Assert.That(psquared.Result(0.5d), Is.EqualTo(0.48137186347987881d));
+            Assert.That(psquared.Result(0.75d), Is.EqualTo(0.70650331141191547d));
+            Assert.That(psquared.Result(1d), Is.EqualTo(0.98608532658385972d));
+
+            Console.WriteLine(
+                $"Expected: {TestCaseDataRandomDistribution.Percentiles[0]} Actual: {psquared.Result(0)} Error: {CalculatePercentageDifference(TestCaseDataRandomDistribution.Percentiles[0], psquared.Result(0))}");
+            Console.WriteLine(
+                $"Expected: {TestCaseDataRandomDistribution.Percentiles[1]} Actual: {psquared.Result(0.25d)} Error: {CalculatePercentageDifference(TestCaseDataRandomDistribution.Percentiles[1], psquared.Result(0.25d))}");
+            Console.WriteLine(
+                $"Expected: {TestCaseDataRandomDistribution.Percentiles[2]} Actual: {psquared.Result(0.5d)} Error: {CalculatePercentageDifference(TestCaseDataRandomDistribution.Percentiles[2], psquared.Result(0.5d))}");
+            Console.WriteLine(
+                $"Expected: {TestCaseDataRandomDistribution.Percentiles[3]} Actual: {psquared.Result(0.75d)} Error: {CalculatePercentageDifference(TestCaseDataRandomDistribution.Percentiles[3], psquared.Result(0.75d))}");
+            Console.WriteLine(
+                $"Expected: {TestCaseDataRandomDistribution.Percentiles[4]} Actual: {psquared.Result(1d)} Error: Error: {CalculatePercentageDifference(TestCaseDataRandomDistribution.Percentiles[4], psquared.Result(1d))}");
+        }
+
+        [Test]
+        public void TestQuantilesTestCaseDataRandomNormalDistribution()
+        {
+            var psquared = new PSquared(new List<double> { 0d, 0.25d, 0.5d, 0.75d, 1d });
+            
+            foreach (var d in TestCaseDataRandomNormalDistribution.Data)
+            {
+                psquared.AddSample(d);
+            }
+
+            Assert.That(psquared.Result(0), Is.EqualTo(-1.8734831276988309d));
+            Assert.That(psquared.Result(0.25d), Is.EqualTo(-0.70305951196317573d));
+            Assert.That(psquared.Result(0.5d), Is.EqualTo(-0.065403671463218238d));
+            Assert.That(psquared.Result(0.75d), Is.EqualTo(0.78953029041255129d));
+            Assert.That(psquared.Result(1d), Is.EqualTo(2.1478607563987957d));
+
+            Console.WriteLine(
+                $"Expected: {TestCaseDataRandomNormalDistribution.Percentiles[0]} Actual: {psquared.Result(0)} Error: {CalculatePercentageDifference(TestCaseDataRandomNormalDistribution.Percentiles[0], psquared.Result(0))}");
+            Console.WriteLine(
+                $"Expected: {TestCaseDataRandomNormalDistribution.Percentiles[1]} Actual: {psquared.Result(0.25d)} Error: {CalculatePercentageDifference(TestCaseDataRandomNormalDistribution.Percentiles[1], psquared.Result(0.25d))}");
+            Console.WriteLine(
+                $"Expected: {TestCaseDataRandomNormalDistribution.Percentiles[2]} Actual: {psquared.Result(0.5d)} Error: {CalculatePercentageDifference(TestCaseDataRandomNormalDistribution.Percentiles[2], psquared.Result(0.5d))}");
+            Console.WriteLine(
+                $"Expected: {TestCaseDataRandomNormalDistribution.Percentiles[3]} Actual: {psquared.Result(0.75d)} Error: {CalculatePercentageDifference(TestCaseDataRandomNormalDistribution.Percentiles[3], psquared.Result(0.75d))}");
+            Console.WriteLine(
+                $"Expected: {TestCaseDataRandomNormalDistribution.Percentiles[4]} Actual: {psquared.Result(1d)} Error: Error: {CalculatePercentageDifference(TestCaseDataRandomNormalDistribution.Percentiles[4], psquared.Result(1d))}");
+        }
+
+        private double CalculatePercentageDifference(double original, double newValue)
+        {
+            return ((original - newValue)/original)*100;
         }
     }
 }
