@@ -47,8 +47,8 @@
     <Compile Include="PSquaredUnitTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TestCaseDataA.cs" />
-    <Compile Include="TestCaseDataRandomDistribution.cs" />
-    <Compile Include="TestCaseDataRandomNormalDistribution.cs" />
+    <Compile Include="TestCaseDataRandomDistributionA.cs" />
+    <Compile Include="TestCaseDataRandomDistributionB.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
