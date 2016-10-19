@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using DumpingCoreMemory.Statistics;
 using NUnit.Framework;
 
@@ -64,8 +65,7 @@ namespace DumpingCoreMemory.StatisticsUnitTests
             Assert.That(psquared.Result(0.9), Is.EqualTo(1.31936120666738650000d));
             Assert.That(psquared.Result(1), Is.EqualTo(2.10491355499534190000d));
         }
-
-
+        
         [Test]
         public void TestQuantilesTestCaseDataRandomDistributionA()
         {
@@ -120,6 +120,23 @@ namespace DumpingCoreMemory.StatisticsUnitTests
                 $"Expected: {TestCaseDataRandomDistributionB.Percentiles[3]} Actual: {psquared.Result(0.75d)} Error: {CalculatePercentageDifference(TestCaseDataRandomDistributionB.Percentiles[3], psquared.Result(0.75d))}");
             Console.WriteLine(
                 $"Expected: {TestCaseDataRandomDistributionB.Percentiles[4]} Actual: {psquared.Result(1d)} Error: {CalculatePercentageDifference(TestCaseDataRandomDistributionB.Percentiles[4], psquared.Result(1d))}");
+        }
+
+        [Test]
+        public void TestQuantilesTestCaseDataRandomDistributionBPerformance()
+        {
+            var psquared = new PSquared(new List<double> { 0d, 0.25d, 0.5d, 0.75d, 1d });
+
+            Stopwatch sw = new Stopwatch();
+
+            sw.Start();
+            foreach (var d in TestCaseDataRandomDistributionB.Data)
+            {
+                psquared.AddSample(d);
+            }
+            sw.Stop();
+
+            Console.WriteLine($"Elapsed: {sw.ElapsedMilliseconds} Avg: {sw.ElapsedTicks / (Stopwatch.Frequency / (1000L*1000L))} us");
         }
 
         private static double CalculatePercentageDifference(double expected, double actual)
