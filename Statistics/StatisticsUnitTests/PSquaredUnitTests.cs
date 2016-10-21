@@ -136,12 +136,12 @@ namespace DumpingCoreMemory.StatisticsUnitTests
             }
             sw.Stop();
 
-            Console.WriteLine($"Elapsed: {sw.ElapsedMilliseconds} Avg: {sw.ElapsedTicks / (Stopwatch.Frequency / (1000L*1000L))} us");
+            Console.WriteLine($"Elapsed: {sw.ElapsedMilliseconds} Avg: {(sw.ElapsedTicks / (Stopwatch.Frequency / (1000L*1000L))/ TestCaseDataRandomDistributionB.Data.Count)} us");
         }
 
         private static double CalculatePercentageDifference(double expected, double actual)
         {
-            return ((expected - actual)/expected)*100;
+            return ((expected - actual)/(expected + actual/2))*100;
         }
     }
 }
